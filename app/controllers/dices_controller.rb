@@ -31,7 +31,7 @@ class DicesController < ApplicationController
           if e.roll_dice.include? 1
             e.roll_dice.map{|f| arr_1 << e.name if f == 1}
             next_index = i+1
-            next_index = 0 if i == player.length-1
+            next_index = 0 if next_index > player.length-1
             e.roll_dice.delete(1)
 
             unless game_loads[next_index].roll_dice.present?
@@ -43,16 +43,18 @@ class DicesController < ApplicationController
             arr_1.map{|arr| game_loads[next_index].roll_dice.push(arr)}
 
           end
-          e.roll_dice.map!{|replace|
-            if replace.is_a?(String)
-              replace = 1
-            else
-              replace
-            end
-          }
-
-        puts e.name+" = "+e.roll_dice.join("|")
         end
+      end
+
+      game_loads.each do |out|
+        out.roll_dice.map!{|replace|
+          if replace.is_a?(String)
+            replace = 1
+          else
+            replace
+          end
+        }
+        puts out.name+" = "+out.roll_dice.join("|")
       end
       puts '=========================='
       game_loads.map{|ko| arr_game_over << ko.name if ko.roll_dice.blank? }
