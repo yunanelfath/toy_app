@@ -13,4 +13,15 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+
+// react config
+
+//= require react
+//= require react_ujs
+//= require components
+
+//react components
+//= require components/test_form
+
+
 //= require_tree .
