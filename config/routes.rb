@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   get 'dices', to: 'dices#index' #dice game
 
+  get 'feeds', to: 'feeds#index' #feed scroll view
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

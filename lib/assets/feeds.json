@@ -1,0 +1,170 @@
+{
+  "feeds" : [
+    {"feed": {
+      "id": 1,
+      "author": "Niya",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "Saking Nyamannya Kamu Sampai Lupa Kalau Sedang Berada Di Kereta Api"
+    }},
+    {"ad": {
+      "author": "Hike",
+      "image": "img/dummy_ads.jpg",
+      "link": "javascript:",
+      "title": "Sekarang Beli Oleh2 Jadi Lebih Mudah",
+      "type": "adsfeed"
+    }},
+    {"feed": {
+      "id": 2,
+      "author": "Arman @Abstrak",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "WOWW!!!! Kereta Peluru"
+    }},
+    {"feed": {
+      "id": 3,
+      "author": "Kyle @Berita Nyeleneh",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "Film \"Sebuah Lagu untuk Tuhan\" ini akan Menyentuhmu, Walaupun Hatimu Sekeras Batu"
+    }},
+    {"feed": {
+      "id": 4,
+      "author": "Robert @Japan We3ird News",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "Saking Nyamannya Kamu Sampai Lupa Kalau Sedang Berada Di Kereta Api, Berikut 8 Kereta Api Kelas Eksekutif Terbaik di"
+    }},
+    {"feed": {
+      "id": 5,
+      "author": "Niya",
+      "image": "img/dummy_350_200.jpg",
+      "link": "javascript:",
+      "title": "Saking Nyamannya Kamu Sampai Lupa Kalau Sedang Berada Di Kereta Api"
+    }},
+    {"ad": {
+      "type": "adsense",
+      "content": "<img class=\"dummy\" src=\"img/ads_300_250.jpg\" />"
+    }},
+    {"feed": {
+      "id": 6,
+      "author": "Niya",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "Saking Nyamannya Kamu Sampai Lupa Kalau Sedang Berada Di Kereta Api"
+    }},
+    {"feed": {
+      "id": 7,
+      "author": "Arman @Abstrak",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "WOWW!!!! Kereta Peluru"
+    }},
+    {"feed": {
+      "id": 8,
+      "author": "Kyle @Berita Nyeleneh",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "Film \"Sebuah Lagu untuk Tuhan\" ini akan Menyentuhmu, Walaupun Hatimu Sekeras Batu"
+    }},
+    {"feed": {
+      "id": 9,
+      "author": "Robert @Japan We3ird News",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "Saking Nyamannya Kamu Sampai Lupa Kalau Sedang Berada Di Kereta Api, Berikut 8 Kereta Api Kelas Eksekutif Terbaik di"
+    }},
+    {"feed": {
+      "id": 10,
+      "author": "Niya",
+      "image": "img/dummy_350_200.jpg",
+      "link": "javascript:",
+      "title": "Saking Nyamannya Kamu Sampai Lupa Kalau Sedang Berada Di Kereta Api"
+    }},
+    {"ad": {
+      "type": "videoad",
+      "content": "<img class=\"dummy\" src=\"img/videoad.jpg\" />"
+    }},
+    {"feed": {
+      "id": 11,
+      "author": "Niya",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "Saking Nyamannya Kamu Sampai Lupa Kalau Sedang Berada Di Kereta Api"
+    }},
+    {"ad": {
+      "author": "Hike",
+      "image": "img/dummy_ads.jpg",
+      "link": "javascript:",
+      "title": "Sekarang Beli Oleh2 Jadi Lebih Mudah",
+      "type": "adsfeed"
+    }},
+    {"feed": {
+      "id": 12,
+      "author": "Arman @Abstrak",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "WOWW!!!! Kereta Peluru"
+    }},
+    {"feed": {
+      "id": 13,
+      "author": "Kyle @Berita Nyeleneh",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "Film \"Sebuah Lagu untuk Tuhan\" ini akan Menyentuhmu, Walaupun Hatimu Sekeras Batu"
+    }},
+    {"feed": {
+      "id": 14,
+      "author": "Robert @Japan We3ird News",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "Saking Nyamannya Kamu Sampai Lupa Kalau Sedang Berada Di Kereta Api, Berikut 8 Kereta Api Kelas Eksekutif Terbaik di"
+    }},
+    {"feed": {
+      "id": 15,
+      "author": "Niya",
+      "image": "img/dummy_350_200.jpg",
+      "link": "javascript:",
+      "title": "Saking Nyamannya Kamu Sampai Lupa Kalau Sedang Berada Di Kereta Api"
+    }},
+    {"ad": {
+      "type": "adsense",
+      "content": "<img class=\"dummy\" src=\"img/ads_300_250.jpg\" />"
+    }},
+    {"feed": {
+      "id": 16,
+      "author": "Niya",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "Saking Nyamannya Kamu Sampai Lupa Kalau Sedang Berada Di Kereta Api"
+    }},
+    {"feed": {
+      "id": 17,
+      "author": "Arman @Abstrak",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "WOWW!!!! Kereta Peluru"
+    }},
+    {"feed": {
+      "id": 18,
+      "author": "Kyle @Berita Nyeleneh",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "Film \"Sebuah Lagu untuk Tuhan\" ini akan Menyentuhmu, Walaupun Hatimu Sekeras Batu"
+    }},
+    {"feed": {
+      "id": 19,
+      "author": "Robert @Japan We3ird News",
+      "image": "img/dummy_125_90_1.jpg",
+      "link": "javascript:",
+      "title": "Saking Nyamannya Kamu Sampai Lupa Kalau Sedang Berada Di Kereta Api, Berikut 8 Kereta Api Kelas Eksekutif Terbaik di"
+    }},
+    {"feed": {
+      "id": 20,
+      "author": "Niya",
+      "image": "img/dummy_350_200.jpg",
+      "link": "javascript:",
+      "title": "Saking Nyamannya Kamu Sampai Lupa Kalau Sedang Berada Di Kereta Api"
+    }}
+  ]
+}
