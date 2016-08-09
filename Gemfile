@@ -41,6 +41,8 @@ gem 'coffee-script-source', '1.8.0' #http://stackoverflow.com/questions/28312460
 gem 'react-rails' #https://github.com/reactjs/react-rails
 gem 'sprockets-coffee-react' # file cjsx
 
+gem 'js-routes'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

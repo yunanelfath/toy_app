@@ -22,6 +22,7 @@
 
 //react components
 //= require components/test_form
+//= require js-routes
 
 
 //= require_tree .
