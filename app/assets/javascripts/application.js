@@ -23,6 +23,6 @@
 //react components
 //= require components/test_form
 //= require js-routes
-
+//= require lodash
 
 //= require_tree .
