@@ -17,11 +17,13 @@
 // react config
 
 //= require react
+//= require react-server
 //= require react_ujs
 //= require components
 
 //react components
 //= require components/test_form
+//= require components/feed_items
 //= require js-routes
 //= require lodash
 

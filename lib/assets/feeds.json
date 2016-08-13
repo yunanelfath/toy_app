@@ -8,11 +8,8 @@
       "title": "Saking Nyamannya Kamu Sampai Lupa Kalau Sedang Berada Di Kereta Api"
     }},
     {"ad": {
-      "author": "Hike",
-      "image": "img/dummy_ads.jpg",
-      "link": "javascript:",
-      "title": "Sekarang Beli Oleh2 Jadi Lebih Mudah",
-      "type": "adsfeed"
+      "type": "videoad",
+      "content": "<img class=\"dummy\" src=\"img/videoad.jpg\" />asdfasdf qereqwer"
     }},
     {"feed": {
       "id": 2,
@@ -44,7 +41,7 @@
     }},
     {"ad": {
       "type": "adsense",
-      "content": "<img class=\"dummy\" src=\"img/ads_300_250.jpg\" />"
+      "content": "<img class=\"dummy\" src=\"img/ads_300_250.jpg\" />11341234dasdfasd"
     }},
     {"feed": {
       "id": 6,
@@ -83,7 +80,7 @@
     }},
     {"ad": {
       "type": "videoad",
-      "content": "<img class=\"dummy\" src=\"img/videoad.jpg\" />"
+      "content": "<img class=\"dummy\" src=\"img/videoad.jpg\" />asdfasdf"
     }},
     {"feed": {
       "id": 11,
@@ -93,11 +90,8 @@
       "title": "Saking Nyamannya Kamu Sampai Lupa Kalau Sedang Berada Di Kereta Api"
     }},
     {"ad": {
-      "author": "Hike",
-      "image": "img/dummy_ads.jpg",
-      "link": "javascript:",
-      "title": "Sekarang Beli Oleh2 Jadi Lebih Mudah",
-      "type": "adsfeed"
+      "type": "videoad",
+      "content": "<img class=\"dummy\" src=\"img/videoad.jpg\" />asdfasdf"
     }},
     {"feed": {
       "id": 12,
@@ -129,7 +123,7 @@
     }},
     {"ad": {
       "type": "adsense",
-      "content": "<img class=\"dummy\" src=\"img/ads_300_250.jpg\" />"
+      "content": "<img class=\"dummy\" src=\"img/ads_300_250.jpg\" />qwerqwer"
     }},
     {"feed": {
       "id": 16,

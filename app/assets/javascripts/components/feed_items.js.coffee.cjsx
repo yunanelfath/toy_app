@@ -1,31 +1,79 @@
 FeedItems = React.createClass
   propTypes:
-    items: React.PropTypes.string
+    items: React.PropTypes.array
+    limit: React.PropTypes.number
+    page: React.PropTypes.number
 
   getInitialState: ->
     {
       items: @props.items
+      page: @props.page
+      requesting: false
+      completed: false
     }
 
   componentDidMount: ->
+    $(window).on('scroll', $.proxy(@recordScroll, @))
+
+  componentWillReceiveProps: (newProps) ->
+    { limit } = @props
+    { items, page } = @state
+
+    if items.length > 0 && newProps.items.length > 0
+      for item in newProps.items
+        items.push(item)
+    @setState(items: items, page: newProps.page, requesting: newProps.requesting)
+
+  recordScroll: (event) ->
+    _this = @
+    getLoadFeeds = _.debounce((event) =>
+      unless _this.state.requesting
+        nextPage = _this.state.page + 1
+        $.ajax
+          url: Routes.feeds_path({format: 'js',limit: _this.props.limit, page: nextPage})
+          dataType: 'json'
+          beforeSend: =>
+            _this.setState(requesting: true)
+          success: ((data)=>
+            if data
+              _this.componentWillReceiveProps({items: data, page: nextPage, requesting: false})
+            else
+              alert('data completed') #stop ajax if is loaded all
+              _this.setState(completed: true)
+          )
+    ,800)
+
+    # console.log scrollY: event.currentTarget.scrollY, maxY: (event.currentTarget.scrollMaxY - 100)
+    if event.currentTarget.scrollY > (event.currentTarget.scrollMaxY - 100)
+      getLoadFeeds(event)
+      console.log _this.state.items.length
 
   onClickInfo: (value)->
-    debugger
-    alert(value.author)
+    alert(value?.author)
 
   render: ->
-    { items } = @props
+    { limit } = @props
+    { items, page, requesting, completed } = @state
     { onClickInfo } = @
 
     itemComponent = (index) =>
       key = Object.keys(index)
       item = index[key.toString()]
-      <li className="#{key.toString()}" onClick={onClickInfo.bind(@, item)}>{item.title}</li>
+      if key.toString() == 'ad'
+        <li className="#{key.toString()}" onClick={onClickInfo.bind(@, item)}>{item.content}</li>
+      else
+        <li className="#{key.toString()}" onClick={onClickInfo.bind(@, item)}>{item.title}</li>
 
     <div className="btn test">
-      <ul style={textAlign: 'left'}>
+      <ul style={textAlign: 'left', display: 'inline-block', padding: 0}>
         {items.map(itemComponent)}
       </ul>
+      <div>
+        {
+          if requesting && completed == false
+            "Loading ....!"
+        }
+      </div>
     </div>
 
 
