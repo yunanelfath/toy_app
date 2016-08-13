@@ -36,6 +36,9 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
+  # config.action_controller.asset_host = 'http://assets.example.com'
+  config.action_controller.asset_host = ENV['ASSETS_HOST'] ||= 'http://localhost:3000'
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
