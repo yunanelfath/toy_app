@@ -26,6 +26,7 @@ FeedItems = React.createClass
 
   recordScroll: (event) ->
     _this = @
+    elementUl = $(ReactDOM.findDOMNode(this)).find('ul')
     getLoadFeeds = _.debounce((event) =>
       unless _this.state.requesting
         nextPage = _this.state.page + 1
@@ -44,8 +45,14 @@ FeedItems = React.createClass
     ,800)
 
     # console.log scrollY: event.currentTarget.scrollY, maxY: (event.currentTarget.scrollMaxY - 100)
-    if event.currentTarget.scrollY > (event.currentTarget.scrollMaxY - 100)
+    bottomLimit = if event.currentTarget.scrollMaxY == undefined then elementUl.outerHeight() else event.currentTarget.scrollMaxY
+    bottomLimit = bottomLimit - 550
+    scrollTop = if event.currentTarget.document.documentElement.scrollTop then event.currentTarget.document.documentElement.scrollTop else event.currentTarget.scrollY # IE 9 condition
+    console.log "scrollY: "+scrollTop+",  bottomLmit:" +bottomLimit # for ie
+    # console.log scrollY: event.currentTarget.scrollY, maxY: (bottomLimit - 250)
+    if scrollTop > bottomLimit
       getLoadFeeds(event)
+      console.log elementUl.outerHeight()
       console.log _this.state.items.length
 
   onClickInfo: (value)->

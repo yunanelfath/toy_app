@@ -3,7 +3,7 @@ class FeedsController < ApplicationController
     json_file = File.open(File.join(Rails.root, 'lib','assets','feeds.json'))
     file = File.read(json_file)
 
-    @default_limit = 3
+    @default_limit = 5
 
     @file = JSON.parse(file)
     offset = params[:page].nil? ? 0 : params[:page].to_i
