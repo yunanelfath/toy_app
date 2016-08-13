@@ -15,6 +15,9 @@
 # ignore config database
 /config/database.yml
 
+# ignore asset precompile
+/public/assets
+
 # Used by dotenv library to load environment variables.
 # .env
 
